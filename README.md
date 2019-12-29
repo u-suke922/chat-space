@@ -30,7 +30,6 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|group_id|integer|null: false|
 |name|string|null: false|
 
 ### Association
