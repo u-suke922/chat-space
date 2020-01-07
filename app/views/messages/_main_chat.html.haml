@@ -5,7 +5,7 @@
         %p techcamp
       .main-header__left-box__member-list
         %p Member : u-suke
-    %a{:href => "#"}
+    = link_to "#" do
     .main-header__edit-btn
       Edit
   .messages
@@ -22,8 +22,8 @@
       .input-box
         %input#message_content.input-box__text
         %label.input-box__image
-          %input#test{"type" => "file"}
-          %label{:for => "test"}
+          %input#test{"type" : "file"}
+          %label{:for : "test"}
             %i.far.fa-image         
           %i.file_field          
-      %input.submit-btn{"data-disable-with" => "Send", :name => "commit", :type => "submit", :value => "Send"}/
+      %input.submit-btn{"data-disable-with" : "Send", :name : "commit", :type : "submit", :value : "Send"}/
