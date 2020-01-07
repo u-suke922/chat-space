@@ -1,0 +1,27 @@
+.chat-main
+  .main-header
+    .main-header__left-box
+      .main-header__left-box__current-group
+        %p techcamp
+      .main-header__left-box__member-list
+        %p Member : u-suke
+    %a{:href => "#"}
+    .main-header__edit-btn
+      Edit
+  .messages
+    .message
+      .message__upper-info
+        .message__upper-info__talker
+          u-suke
+        .message__upper-info__date
+          2020/01/06(Mon) 13:10:06
+      .message__text
+        おはよう！
+  .form
+    .new-message
+      .input-box
+        %input#message_content.input-box__text{:name => "message[content]", :placeholder => "type a message", :type => "text"}/
+        = f.label :image, class: "form-image" do
+          %i.far.fa-image
+          f.file_field :image
+      %input.submit-btn{"data-disable-with" => "Send", :name => "commit", :type => "submit", :value => "Send"}/
