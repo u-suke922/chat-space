@@ -20,8 +20,10 @@
   .form
     .new-message
       .input-box
-        %input#message_content.input-box__text{:name => "message[content]", :placeholder => "type a message", :type => "text"}/
-        = f.label :image, class: "form-image" do
-          %i.far.fa-image
-          f.file_field :image
+        %input#message_content.input-box__text
+        %label.input-box__image
+          %input#test{"type" => "file"}
+          %label{:for => "test"}
+            %i.far.fa-image         
+          %i.file_field          
       %input.submit-btn{"data-disable-with" => "Send", :name => "commit", :type => "submit", :value => "Send"}/

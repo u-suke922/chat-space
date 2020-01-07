@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+#test{
+  display: none;
+}
 .chat-main {
   background-color: #ffffff;
   width: calc(100vw - 300px);
