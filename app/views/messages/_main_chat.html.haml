@@ -1,0 +1,29 @@
+.chat-main
+  .main-header
+    .main-header__left-box
+      .main-header__left-box__current-group
+        %p techcamp
+      .main-header__left-box__member-list
+        %p Member : u-suke
+    .main-header__edit-btn
+      = link_to "#" do
+        Edit
+  .messages
+    .message
+      .message__upper-info
+        .message__upper-info__talker
+          u-suke
+        .message__upper-info__date
+          2020/01/06(Mon) 13:10:06
+      .message__text
+        おはよう！
+  .form
+    .new-message
+      .input-box
+        %input#message_content.input-box__text
+        %label.input-box__image
+          %input#test{"type":"file"}
+          %label{for: "test"}
+            %i.far.fa-image         
+          %i.file_field          
+      %input.submit-btn{"data-disable-with":"Send", name:"commit", type: "submit", value: "Send"}/
