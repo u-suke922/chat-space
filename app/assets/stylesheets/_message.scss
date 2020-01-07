@@ -15,21 +15,21 @@
     border-bottom: solid 1px;
     border-bottom-color: rgb(238, 238, 238);
     justify-content: space-between;
-    .＆__left-box {
+    &__left-box {
       align-self: flex-end;
       margin-left: 40px;
     }
-      .＆__current-group {
+      &__left-box__current-group {
         font-size: 20px;
         color: #333333;
         margin-bottom: 15px;
       }
-      .＆__member-list {
+      &__left-box__member-list {
         font-size: 12px;
         color: #999999;
       }
     }
-    .＆__edit-btn {
+    .main-header__edit-btn {
       align-items: center;
       height: 40px;
       line-height: 40px;
@@ -39,6 +39,10 @@
       right: 40px;
       color: #38aef0;
       align-self: center;
+      a {
+        color: #38aef0;
+        text-decoration: none;
+      }
      }
   }
   .messages {
@@ -47,21 +51,21 @@
     background-color: #fafafa;
     .message {
       padding-bottom: 40px;
-      .＆__upper-info {
+      &__upper-info {
         display: flex;
         margin-bottom: 10px;
-        .＆__talker {
+        &__talker {
           color: #333333;
           font-size: 16px;
           font-weight: bold;
         }
-        .＆__date {
+        &__date {
           color: #999999;
           font-size: 12px;
           margin-left: 10px;
         }
       }
-      .＆__text {
+      &__text {
         color: #434a54;
         font-size: 14px;
         margin-bottom: 10px;
@@ -78,7 +82,7 @@
           position: relative;
           width: 100%;
           display: flex;
-          .＆__text {
+          &__text {
             background-color: white;
             height: 50px;
             width: 100%;
@@ -87,7 +91,7 @@
             display: flex;
             padding: 0 40px 0 10px;
           }
-          .＆__image {
+          &__image {
             font-size: 1.3rem;
             position: absolute;
             top: 10px;
@@ -126,22 +130,22 @@
     display: flex;
     align-items: center;
     padding: 0 20px;
-    .＆__box {
+    &__box {
       display: flex;
       justify-content: space-between;
       width: 100%;
       font-weight: bold;
-      .＆__user-name {
+      &__user-name {
         display: block;
         margin-inline-start: 1em;
         margin-inline-end: 1em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
       }
-      .＆__menu {
+      &__menu {
         display: flex;
       }
-      .＆__new-group {
+      &__new-group {
         margin-left: 5px;
       }
     }
@@ -159,11 +163,11 @@
     .group {
       margin-bottom: 40px;
       color: #ffffff;
-      .＆__group-name {
+      &__group-name {
         font-size: 15px;
         margin-bottom: 5px;
       }
-      .＆__group-latest-message {
+      &__group-latest-message {
         font-size: 11px;
         margin-bottom: 40px;
       }
