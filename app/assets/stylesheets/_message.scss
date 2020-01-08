@@ -144,18 +144,26 @@
       }
       &__menu {
         display: flex;
+        &__new-group {
+          margin-left: 5px;
+          a{
+            color:white;
+          }
+        }
+        &__edit-user{
+          a{
+          color:white;
+           }
       }
-      &__new-group {
-        margin-left: 5px;
-      }
+     }
     }
   }
-  .link-edit {
-    color: #ffffff;
-  }
-  .link-cog {
-    color: #ffffff;
-  }
+  // .link-edit {
+  //   color: #ffffff;
+  // }
+  // .link-cog {
+  //   color: #ffffff;
+  // }
   .groups {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
