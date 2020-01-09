@@ -144,13 +144,13 @@
       }
       &__menu {
         display: flex;
-        &__new-group {
-          margin-left: 5px;
+        &__new-group {          
           a{
             color:white;
           }
         }
         &__edit-user{
+          margin-left: 5px;
           a{
           color:white;
            }
@@ -158,12 +158,7 @@
      }
     }
   }
-  // .link-edit {
-  //   color: #ffffff;
-  // }
-  // .link-cog {
-  //   color: #ffffff;
-  // }
+  
   .groups {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
