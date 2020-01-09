@@ -2,28 +2,24 @@
   .main-header
     .main-header__left-box
       .main-header__left-box__current-group
-        %p techcamp
+        = @group.name
       .main-header__left-box__member-list
-        %p Member : u-suke
+        Member :
+        .main-header__left-box__member-list__box
+          - @group.users.each do |user|
+            = user.name
     .main-header__edit-btn
-      = link_to "#" do
+      = link_to edit_group_path(@group) do
         Edit
   .messages
-    .message
-      .message__upper-info
-        .message__upper-info__talker
-          u-suke
-        .message__upper-info__date
-          2020/01/06(Mon) 13:10:06
-      .message__text
-        おはよう！
+    = render @messages
+
   .form
-    .new-message
+    = form_for [@group, @message] do |f|
       .input-box
-        %input#message_content.input-box__text
-        %label.input-box__image
-          %input#test{"type":"file"}
-          %label{for: "test"}
-            %i.far.fa-image         
-          %i.file_field          
-      %input.submit-btn{"data-disable-with":"Send", name:"commit", type: "submit", value: "Send"}/
+        = f.text_field :content, class: 'input-box__text',placeholder: 'type a message' 
+        .form__mask 
+          = f.label :image, class: 'input-box__image' do
+            = icon('fa','image', class: 'icon')  
+            = f.file_field :image, class: 'hidden'             
+        = f.submit 'send', class: 'submit__btn'
