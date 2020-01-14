@@ -2,9 +2,9 @@
   box-sizing: border-box;
 }
 
-form {
-  display: flex;
-}
+// form {
+//   display: flex;
+// }
 .chat-main {
   background-color: #ffffff;
   width: calc(100vw - 300px);
@@ -79,6 +79,8 @@ form {
     height: 90px;
     padding: 20px 40px;
     background-color: #d2d2d2;
+    
+
       .input-box {
         width: 100%;
         display: flex;
