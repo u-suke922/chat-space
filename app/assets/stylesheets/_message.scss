@@ -1,9 +1,7 @@
 * {
   box-sizing: border-box;
 }
-#test{
-  display: none;
-}
+
 form {
   display: flex;
 }
@@ -53,6 +51,7 @@ form {
     height: calc(100vh - 190px);
     padding: 46px 40px;
     background-color: #fafafa;
+    overflow: scroll;
     .message {
       padding-bottom: 40px;
       &__upper-info {
